@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Brev Edge | Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-jQK4xg+hod1r+qihMAY92OZJxao3wbhwKzE3x+x49M7t1LCBaSplWcfy5LV+0F5x3a3WYzJqv3qPHvY6dd7J0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="glass">
+    <nav class="nav-bar">
+      <a href="index.html" class="logo">Prime.Brev.Edge</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main class="page">
+    <section class="floating-card glass contact-card">
+      <h2>Contact Me</h2>
+      <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/254732012560" target="_blank">+254 732 012560</a></p>
+      <p><i class="fa-brands fa-instagram"></i> Instagram: <a href="https://www.instagram.com/prime.brev.edge/" target="_blank">@prime.brev.edge</a></p>
+      <form id="contact-form" class="floating-form" onsubmit="return submitForm(event)">
+        <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" required /></div>
+        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required /></div>
+        <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="4" required></textarea></div>
+        <button type="submit" class="btn">Send Message</button>
+        <p class="form-status" id="form-status"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="glass footer">
+    <div class="social-links">
+      <a href="https://wa.me/254732012560" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/prime.brev.edge/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
